@@ -1,4 +1,5 @@
 'use client';
+import ThemeToggle from '@/components/common/Theme/ThemeToggle';
 import React, { useState } from 'react';
 import Link from 'next/link'; // Usamos Link de Next.js para una navegación fluida
 
@@ -28,7 +29,7 @@ const Navbar = () => {
 
           {/* Enlaces de Navegación (Desktop) */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-center space-x-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -47,7 +48,9 @@ const Navbar = () => {
               >
                 Contratar
               </Link>
+              <ThemeToggle />
             </div>
+
           </div>
 
           {/* Botón de Menú (Mobile) */}

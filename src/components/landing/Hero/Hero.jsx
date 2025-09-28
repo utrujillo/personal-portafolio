@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     // Contenedor principal: usa un fondo suave, padding generoso y un borde inferior 
     // para separarlo de la siguiente sección.
-    <div className="text-center py-20 px-4 sm:py-24 md:py-32 bg-gray-50 border-b border-gray-200">
+    <div className="text-center py-20 px-4 sm:py-24 md:py-32 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 transition duration-500">
       
       {/* 📸 Foto Profesional */}
       {/* w-32 en móvil, w-40 en desktop. Centrada con mx-auto. */}
@@ -31,13 +31,13 @@ const Hero = () => {
       
       {/* 🌟 Titular Fuerte y Potente */}
       {/* Textos más grandes en desktop (md:text-7xl) para máximo impacto */}
-      <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-gray-900 mt-8 leading-tight">
+      <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-gray-900 dark:text-white mt-8 leading-tight">
         Arquitecto de Software & <br className="hidden sm:inline" />
         <span className="text-indigo-600">Líder Técnico</span>
       </h1>
       
       {/* 💡 Subtítulo / Propuesta de Valor Senior */}
-      <p className="text-lg sm:text-xl text-gray-600 mt-4 max-w-4xl mx-auto">
+      <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mt-4 max-w-4xl mx-auto">
         **Más de 10 años** de experiencia diseñando y construyendo soluciones **Full-Stack** y **Móviles** escalables. Dominio en **React, Rails, FastAPI, Flutter y React Native.**
       </p>
 
