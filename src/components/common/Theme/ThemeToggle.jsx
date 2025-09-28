@@ -6,7 +6,7 @@ import useDarkMode from '@/hooks/useDarkMode';
 
 const ThemeToggle = () => {
   const [theme, toggleTheme] = useDarkMode();
-  console.log('Current theme:', theme); // Para depuración
+  
   return (
     <button
       onClick={toggleTheme}
