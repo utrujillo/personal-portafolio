@@ -2,10 +2,10 @@
 "use client";
 
 import useDarkMode from '@/hooks/useDarkMode';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const ThemeProvider = ({ children }) => {
-  const [theme, toggleTheme] = useDarkMode();
+  useDarkMode();
 
   // 🚨 OJO: El hook ya maneja la clase 'dark' en el <html>.
   // Aquí solo devolvemos los hijos. 
